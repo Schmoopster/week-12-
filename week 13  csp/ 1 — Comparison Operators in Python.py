@@ -52,13 +52,17 @@ if score == 100:
     print("You aced the test, good job!")
 if score >= 90:
     print("You got an A")
-if score <= 89 & score >= 80:
+if score <= 89 and score >= 80:
     print("You got a B")
-if score <= 79 &score  >= 70:
+if score <= 79 and score  >= 70:
     print("You got a C")
-if score <= 69 & score >= 60:
+if score <= 69 and score >= 60:
     print("You got a D")
 if score <= 59:
     print("You failed, im not letting you graduate.")
 # Ask for a password
-    password = input("What is your password?")
+password = input("What is your password?")
+if len(password) >= 8 and any(char.isdigit() for char in password):
+    print("Password is valid.")
+else:
+    print("Password is invalid.")
