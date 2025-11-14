@@ -88,13 +88,42 @@ print(numbers)
 # Practice Problems:
 
 # Create a list with 5 of your favorite foods.
-
+fruit_list = ['orange', 'pineapple', 'apple', 'banana', 'blueberries']
 # Print the second and last item.
-
+print(fruit_list[1])
+print(fruit_list[-1])
 # Add a new item using .append().
-
+fruit_list.append('cherry')
+print(fruit_list)
 # Remove the first item using .pop(0).
-
+fruit_list.pop(0)
+print(fruit_list)
 # Reverse your list using .reverse().
-
+fruit_list.reverse()
+print(fruit_list)
 # Create a list of 3 lists (matrix), and access the middle element.
+#setes = {1,2,3,}
+#setes are unordered collections of unique items
+#setes fo not support slicing ot indexing
+#sets are mutable meaning you can add or remove items
+#sets are created using curly brackets
+#sets don't alloq duplicate items
+my_set = {1,2,3,4,5}
+print(my_set)
+print(type(my_set))
+#remove an item from the list
+my_set.remove(3)
+print(my_set)
+#chekc if an item is in the set
+print(4 in my_set)
+print(3 in my_set)
+
+#tuples are ordered collections of lists 
+#tuples are imutable meaning you cannot modify them after creation 
+#tuples are creaed using pearenthesis 
+my_tuple = (1,2,3,4,5)
+print(my_tuple)
+print(type(my_tuple))
+print(my_tuple[0])
+print(my_tuple[1:4])
+#trying to modify the tuple will result in an error
