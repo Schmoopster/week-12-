@@ -53,11 +53,20 @@ print(first_col)       # [1, 4, 7]
 # Practice Problems:
 
 # Build a matrix variable containing 3 lists of 3 numbers each.
+science = ["AP physics", "AP chem", "AP bio"]
+english = ["AP Lang", "AP Lit", "DC Eng"]
+history = ["APWH", "APUSH", "APGOV"]
+classes = [science, english, history]
 
 # Print the first list.
-
+print(science)
 # Print the second item from the third list.
-
+print(classes[2][1])
 # Use a list comprehension to extract the last item from each sub-list.
 
 # Challenge: Create a new list containing squares of numbers from 1–10 using a comprehension.
+squares = [x**2 for x in range(1,11)]
+for x in range(1,11):
+    print (x**2)
+
+print(squares)
